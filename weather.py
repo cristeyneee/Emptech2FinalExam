@@ -6,8 +6,8 @@ import numpy as np
 import joblib
 
 # Load the model and label encoder
-model = load_model('best_weather_model_fp16.h5')
-label_encoder = joblib.load('label_encoder.pkl')  # Load LabelEncoder using joblib
+model = load_model('best_weather_model.h5')
+label_encoder = joblib.load('label_encoder.pkl')
 
 st.title("Weather Image Classifier 🌤️⛈️❄️")
 st.write("Upload a weather image (64x64) to classify it.")
